@@ -78,7 +78,7 @@ set_target_properties(${LIBRARY_TARGET_NAME} PROPERTIES VERSION       ${${PROJEC
                                                         PUBLIC_HEADER "${${LIBRARY_TARGET_NAME}_HDR}")
 
 target_include_directories(${LIBRARY_TARGET_NAME} PUBLIC "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/src>"
-                                                         "$<INSTALL_INTERFACE:$<INSTALL_PREFIX>/${CMAKE_INSTALL_INCLUDEDIR}>")
+                                                         "$<INSTALL_INTERFACE:$<INSTALL_PREFIX>/${CMAKE_INSTALL_INCLUDEDIR}/fastslic>")
 
 install(TARGETS ${LIBRARY_TARGET_NAME}
         EXPORT  ${PROJECT_NAME}
